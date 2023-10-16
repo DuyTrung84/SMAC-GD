@@ -1,7 +1,7 @@
 <!-- Header -->
 
-<header class="bg-white py-1">
-    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+<header class="bg-white py-1 fixed top-0 z-50 w-full">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
         <div class="flex h-16 items-center justify-between">
             <div class="flex-1 md:flex md:items-center md:space-x-12">
                 <a class="block text-teal-600" href="">
@@ -14,13 +14,15 @@
                 <nav aria-label="Global" class="hidden lg:block font-medium font-roboto">
                     <ul class="flex items-center gap-6 text-sm">
                         <li>
-                            <a class="text-black transition hover:text-gray-500/75" href="about">
+                            <a class="text-black transition hover:text-gray-500/75" [routerLink]="['/about']"
+                                routerLinkActive="active-link" href="about">
                                 Giới thiệu
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-black transition hover:text-gray-500/75" href="product-detail">
+                            <a class="text-black transition hover:text-gray-500/75" href="product-detail"
+                                [routerLink]="['/product-detail']" routerLinkActive="active-link">
                                 Sản phẩm
                             </a>
                         </li>
@@ -38,12 +40,14 @@
                         </li>
 
                         <li>
-                            <a class="text-black transition hover:text-gray-500/75" href="recruit">
+                            <a class="text-black transition hover:text-gray-500/75" href="recruit"
+                                [routerLink]="['/recruit']" routerLinkActive="active-link">
                                 Tuyển dụng
                             </a>
                         </li>
                         <li>
-                            <a class="text-black transition hover:text-gray-500/75" href="contact">
+                            <a class="text-black transition hover:text-gray-500/75" href="contact"
+                                [routerLink]="['/contact']" routerLinkActive="active-link">
                                 Liên hệ
                             </a>
                         </li>
@@ -52,9 +56,9 @@
 
                 <div class="flex items-center gap-4">
                     <div class="sm:flex space-x-4">
-                        <a href="" class="rounded-md my-2.5 text-sm font-medium shadow">
+                        <button class="rounded-md my-2.5 text-sm font-medium shadow">
                             <img src="../../../assets/img/Logo-languge.svg" alt="">
-                        </a>
+                        </button>
                     </div>
 
                     <!-- button open menu -->
@@ -89,8 +93,7 @@
                             <div class="-my-6 divide-y divide-gray-500/10">
                                 <ul class="leading-9">
                                     <li>
-                                        <a class="text-black transition hover:text-gray-500/75"
-                                            href="about">
+                                        <a class="text-black transition hover:text-gray-500/75" href="about">
                                             Giới thiệu
                                         </a>
                                     </li>
@@ -108,8 +111,7 @@
                                     </li>
 
                                     <li>
-                                        <a class="text-black transition hover:text-gray-500/75"
-                                            href="recruit">
+                                        <a class="text-black transition hover:text-gray-500/75" href="recruit">
                                             Tuyển dụng
                                         </a>
                                     </li>
@@ -124,12 +126,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </header>
-
+<div class="mt-20"></div>
 <router-outlet></router-outlet>
 
 <!-- Footer -->

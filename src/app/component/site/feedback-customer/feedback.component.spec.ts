@@ -3,14 +3,15 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FeedbackComponent } from './feedback.component';
 
 describe('FeedbackComponent', () => {
+
   let component: FeedbackComponent;
   let fixture: ComponentFixture<FeedbackComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FeedbackComponent ]
+      declarations: [FeedbackComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(FeedbackComponent);
     component = fixture.componentInstance;

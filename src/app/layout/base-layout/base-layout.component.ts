@@ -13,24 +13,24 @@ export class BaseLayoutComponent implements OnInit {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
-    var menu = document.getElementById("mobile-menu"); // Thay "mobile-menu" bằng ID của menu mobile của bạn
+    var menu = document.getElementById("mobile-menu"); // Thay "mobile-menu" bằng ID của menu mobile
     if (menu) {
       menu.style.display = this.isMenuOpen ? "block" : "none";
-  }
+    }
 
     var menu = document.getElementById("mobile-menu");
     if (this.isMenuOpen) {
-      if(menu){
+      if (menu) {
         menu.classList.add("translate-x-0");
       }
-        
+
     } else {
-        if(menu){
-          menu.classList.remove("translate-x-0");
-        }
+      if (menu) {
+        menu.classList.remove("translate-x-0");
+      }
     }
-}
-  
+  }
+
   ngOnInit(): void {
   }
 
